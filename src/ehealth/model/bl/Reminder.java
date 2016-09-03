@@ -42,7 +42,7 @@ public class Reminder {
                 String tmp = obj.getString("ideal_weight"); //"65.1kg to 79.5kg"
                 System.out.println("Your ideal Weight should be between "+tmp);
                 String status = obj.getJSONObject("bmi").getString("status");
-                String risk = obj.getJSONObject("bmi").getString("rish");
+                String risk = obj.getJSONObject("bmi").getString("risk");
 
                 String[] val = tmp.split(" to "); //65.1kg, 79.5kg
                 //System.out.println(val[0].split("kg")[0]); //65.1
